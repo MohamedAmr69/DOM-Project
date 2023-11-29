@@ -1,0 +1,72 @@
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-item {
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 10px;
+    align-items: center;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-name {
+    font-weight: bold;
+}
+
+.product-price {
+    color: #666;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-button,
+.like-button,
+.delete-button {
+    cursor: pointer;
+}
+
+.quantity-counter {
+    width: 20px;
+    text-align: center;
+}
+
+.like-button {
+    color: #ccc;
+}
+
+.like-button.liked {
+    color: red;
+}
+
+.cart-total {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.cart-total p {
+    font-weight: bold;
+}

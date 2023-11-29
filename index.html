@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/f6dcf461c1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>
+                Shopping Cart
+            </h1>
+        </div>
+        <div class="cart">
+            <div class="cart-items">
+                <div class="cart-item">
+                    <div class="product-info">
+                        <h4 class="product-name">Product 1</h4>
+                        <h4 class="product-price">100 L.E</h4>
+                    </div>
+                    <div class="quantity-control">
+                        <button class="quantity-botton" onclick="decrementButton()">-</button>
+                        <span id="quantityInput">0</span>
+                        <button class="quantity-button" onclick="incrementButton()">+</button>
+                        
+                        <Button onclick="Toggle1()" id="btnh1" class="btn"><i class="fas fa-heart"></i></Button>
+                        <button class="delete-button" onclick="deleteItem(this)">&#10006;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">0</span>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
